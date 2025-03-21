@@ -1,0 +1,14 @@
+nav{
+    background-color: rgb(183, 145, 219);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+ 
+nav img {
+    width: 100px;
+}
