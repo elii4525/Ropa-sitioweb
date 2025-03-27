@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&display=swap');
+body {
+    background-color: bisque;
+}
 nav{
     background-color: rgb(183, 145, 219);
     display: flex;
@@ -11,4 +15,48 @@ nav a{
  
 nav img {
     width: 100px;
+}
+
+.cards {
+    width: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px #b62222;
+    margin: auto;
+}
+
+.cards img {
+    width: 100%;
+}
+
+.cards:hover {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.card-content {
+    padding: 20px;
+    background-color: rgb(168, 212, 239);
+}
+
+.card-content h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.card-content button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+
+}
+
+main {
+    font-size: 34px;
+    text-align: center;
+    font-family: "Limelight", sans-serif;
 }
