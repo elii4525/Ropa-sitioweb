@@ -1,62 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+
 body {
-    background-color: bisque;
+    margin: 0;
+    background-color: rgb(248, 250, 252);
 }
-nav{
-    background-color: rgb(183, 145, 219);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header {
+    background-color: rgb(24, 18, 43);
 }
 
-nav a{
-    text-decoration: none;
-}
- 
 nav img {
-    width: 100px;
+    width: 300px; /* En caso la imagen toca arriba del nav tenemos que agregar a la clase el height*/
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 80px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color:blueviolet;
+}
+nav li {
+    display: inline;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    font-family: "Funnel Display", sans-serif;
+    text-align: center;
+}
+
+.box {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    overflow: auto;
+    width: 50%;
+}
+
+.box p {
+    font-size: 20px;
+    text-align: justify;
+}
+.box h2 {
+    color: rgb(68, 60, 104);
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Limelight", sans-serif;
+}
+
+.box img {
+    width: 450px;
+    float: left;
+    margin-right: 30px;
 }
 
 .cards {
-    width: 400px;
-    margin: 20px;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     overflow: hidden;
-    box-shadow: 0px 5px 10px #b62222;
-    margin: auto;
+    
+    
 }
 
-.cards img {
-    width: 100%;
-}
-
-.cards:hover {
-    padding: 10px;
-    font-size: 18px;
-}
-
-.card-content {
-    padding: 20px;
-    background-color: rgb(168, 212, 239);
-}
-
-.card-content h1 {
-    font-size: 35px;
-    text-align: center;
-}
-
-.card-content button {
-    display: block;
-    margin: 0 auto;
+.card img {
+    width: 350px;
+    overflow: hidden;
     border: none;
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-
+    border-radius: 10px;
 }
 
-main {
-    font-size: 34px;
+.card {
+    border: 5px solid rgb(57, 48, 83);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(99, 89, 133);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px  15px rgba(0, 0, 0, 0.3);
+}
+
+
+.card-content { 
     text-align: center;
-    font-family: "Limelight", sans-serif;
+}
+
+.card-content a{
+    display: inline-block;
+    padding: 5px 35px;
+    background-color: rgb(255, 199, 199);
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+card-content a:hover {
+    font-size: 20px;
+    background-color: rgb(188, 204, 220);
+}
+
+footer {
+    margin-top: 50px;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(24, 18, 43);
+    color: white;
 }
